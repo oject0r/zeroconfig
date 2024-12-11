@@ -22,7 +22,7 @@ git clone https://github.com/oject0r/zeroconfig.git
 cd zeroconfig
 ```
 
-Alternatively, you can download and integrate the `configer.py` file into your project.
+Alternatively, you can download and integrate the `zeroconfig.py` file into your project.
 
 ## Usage
 
