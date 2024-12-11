@@ -27,4 +27,6 @@ Wow!
 This is truly multiline!
 """
 
+password %ENVIRONMENT_VALUE%
+
 # I wish you good luck with ZeroConfig and your projects! 👋
