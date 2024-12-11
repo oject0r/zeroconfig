@@ -1,4 +1,4 @@
-from configer import Configer
+from zeroconfig import Configer
 
 configer = Configer()
 configer.load_sync('example.zeroconfig')
