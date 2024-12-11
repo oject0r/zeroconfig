@@ -1,0 +1,30 @@
+# This is an official example of ZeroConfig syntax and more.
+# Define something by using %variableName %variableValue
+
+myConfigVar I love ZeroConfig!
+
+# You can set int/float or boolean value, and it would be interpreted in Python as these classes.
+intConfigVar 560
+floatConfigVar 655.003
+booleanConfigVar false
+
+# You can use nested dictionaries like that
+nest {
+    message Hello, world!
+    more_nests {
+        message This is the second nest!
+    }
+}
+
+# You can use multi-line strings
+# IT'S IMPORTANT TO NOT USE THEM LIKE THAT:
+# multiline_string """some value
+# yay
+# """
+
+multiline_string """
+Wow!
+This is truly multiline!
+"""
+
+# I wish you good luck with ZeroConfig and your projects! 👋
