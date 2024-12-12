@@ -20,6 +20,7 @@ You can install **ZeroConfig** by cloning the repository directly:
 ```bash
 git clone https://github.com/oject0r/zeroconfig.git
 cd zeroconfig
+pip install -r requirements.txt
 ```
 
 Alternatively, you can download and integrate the `zeroconfig.py` file into your project.
