@@ -1,0 +1,41 @@
+# This is the main ZeroConfig file
+# It demonstrates various features: environment variables, macros, includes, etc.
+
+# Basic key-value
+host localhost
+port 8080
+
+# Testing macros (we copy the value of 'host' into 'myMacro')
+myMacro !copy host
+
+# Testing environment variable with a default value
+# If DB_PASSWORD is not set, it will use 'secretPassword'
+db_password %DB_PASSWORD:secretPassword%
+
+# A multiline string
+someMultiline """
+This is
+multiline
+string
+with line breaks
+"""
+
+# A nested dictionary
+database {
+    user admin  # Inline comment example
+    # This uses the db_password from above
+    password %DB_PASSWORD:1234%
+
+    # A nested list with multiple items
+    roles [
+        admin
+        superuser
+        "special role"
+    ]
+}
+
+# An inline array
+numbers [1, 2, 3, "some text", false]
+
+# Let's include external config
+include "more_config.zc"

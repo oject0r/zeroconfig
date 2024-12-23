@@ -1,7 +1,7 @@
 from zeroconfig import Configer
+import json
 
-configer = Configer()
-configer.load_sync('example.zeroconfig')
+configer = Configer(enable_macros=True)
+configer.load_sync('example.zc')
 
-config = configer.to_dict()
-print(config['multiline_string'])
+print(json.dumps(configer.to_dict(), indent=4, ensure_ascii=False))

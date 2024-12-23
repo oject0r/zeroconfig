@@ -1,0 +1,28 @@
+# This file is included by main_config.zc
+# It will be merged into the main config
+
+extraSettings {
+    featureEnabled true
+    subFeature {
+        name "sub"
+    }
+}
+
+# A list with multiple lines
+anotherList [
+    item1
+    item2
+    item3
+]
+
+# Testing a dictionary in a list
+mixedCollection [
+  # A scalar
+  "hello"
+  # A nested dictionary inside the list
+  {
+    nestedKey nestedValue
+  }
+  # Another inline array
+  [4, 5, 6, "some additional text"]
+]
